@@ -1,0 +1,11 @@
+ Top 10 Job Recommendations Using LinkedIn Postings + AI
+This project is a smart AF job recommender system built using real LinkedIn job posting data!  It combines traditional machine learning (TF-IDF + Logistic
+Regression) with powerful transformer-based sentence embeddings (via Sentence-BERT) to recommend the Top 10 most relevant job roles based on a user’s
+input/query.
+ Tech Stack & Tools:
+Data Source: LinkedIn Job Postings from Kaggle
+Preprocessing: NLTK for tokenizing, stopword removal, and lemmatization
+ML Pipeline: TF-IDF + Logistic Regression with RandomizedSearchCV for hyperparameter tuning
+Semantic Matching: all-mpnet-base-v2 from sentence-transformers for deep semantic understanding
+Similarity Scoring: Cosine similarity between query and job descriptions (both TF-IDF and BERT style) 
+Output: Returns the Top 10 matching job titles based on combined relevance
